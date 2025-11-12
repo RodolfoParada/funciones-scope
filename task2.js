@@ -74,7 +74,7 @@ class Componente {
 }
 
 // ❌ Evitar en métodos de objeto (pierdes this)
-const objeto = {
+const objeto1 = {
   nombre: "Test",
   metodo: () => console.log(this.nombre) // this no se refiere al objeto
 };
