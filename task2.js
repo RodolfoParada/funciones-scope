@@ -4,17 +4,17 @@
 //Sintaxis Básica
 
 // Función tradicional
-function sumar(a, b) {
+function sumarTradicional(a, b) {
   return a + b;
 }
 
 // Arrow function equivalente
-const sumar = (a, b) => {
+const sumarFlechaCompleta = (a, b) => {
   return a + b;
 };
 
 // Arrow function concisa (retorno implícito)
-const sumar = (a, b) => a + b;
+const sumarFlechaConcisa = (a, b) => a + b;
 
 // Un solo parámetro (paréntesis opcionales)
 const cuadrado = x => x * x;
@@ -25,13 +25,20 @@ const saludar = () => "Hola Mundo!";
 //Comportamiento de this en Arrow Functions
 //En funciones tradicionales, this depende de cómo se llama la función:
 
+console.log("sumarTradicional", sumarTradicional(2,2))
+console.log("sumarFlechaCompleta", sumarFlechaCompleta(2,2))
+console.log("sumarFlechaConcisa", sumarFlechaConcisa(2,2))
+console.log("sumarCuadrado", cuadrado(2,2))
+console.log("saludar", saludar("Hola a Kranio"))
+
+
 const objeto = {
-  nombre: "Mi Objeto",
+  nombre: "Nombre Objeto",
   funcionNormal: function() {
-    console.log(this.nombre); // "Mi Objeto"
+    console.log("Función Normal",this.nombre); // "Mi Objeto"
   },
   funcionFlecha: () => {
-    console.log(this.nombre); // undefined (o valor del scope externo)
+    console.log("Función Flecha",this.nombre); // undefined (o valor del scope externo)
   }
 };
 
