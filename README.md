@@ -3,3 +3,5 @@
 #### archivo task2.js arrows function - sintaxis moderna
 #### archivo task3.js closures y scope chain
 #### archivo task4.js parámetros avanzados.
+
+### 2. Se realiza archivo practice.js que contiene los ejemplos prácticos que demuestran closures y funciones avanzadas:
