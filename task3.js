@@ -69,7 +69,7 @@ const contadorModulo = (function() {
 
 contadorModulo.incrementar(); // 1
 contadorModulo.incrementar(); // 2
-console.log(contadorModulo.obtener()); // 2
+console.log("contador modulo",contadorModulo.obtener()); // 2
 // contador no es accesible directamente desde fuera
 
 
